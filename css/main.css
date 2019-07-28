@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #222;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+section {
+    padding: 4em 1em;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+p {
+    max-width: 500px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #AAA;
+}
+
+/* unvisited link */
+a:link {
+    color: #AAA;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #AAA;
+}
+
+/* mouse over link */
+a:hover {
+    color: #AAA;
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: #AAA;
+}
+
+.overlay {
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: white;
+    webkit-animation: fade 750ms ease-in-out; /* Chrome, Safari, Opera */
+    animation: fade 750ms ease-in-out;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fade {
+    0%   {
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        opacity: 0;
+        width: 100%;
+        height: 100%
+    }
+}
+
+/* Standard syntax */
+@keyframes fade {
+    0%   {
+        opacity: 1;
+        width: 100%;
+        height: 100%
+    }
+    100% {
+        opacity: 0;
+        width: 100%;
+        height: 100%
+    }
+}
+
+::selection {
+    background: #002F2F;
+    color: white;
+    text-shadow: none;
+}
+
+@media screen and (min-width: 360px) {
+    section {
+        padding-left: 2em;
+        padding-right:2em;
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    section {
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+}
